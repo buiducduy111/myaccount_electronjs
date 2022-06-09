@@ -9,7 +9,7 @@
 export default {
     name: 'PasswordViewer',
     props: {
-        password: Text
+        password: String
     },
     data(){
         return {

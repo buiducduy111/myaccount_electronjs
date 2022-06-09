@@ -220,6 +220,10 @@ li:first-child {
     background: none !important;
 }
 
+.vs__dropdown-toggle {
+    height: 33.5px !important;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }

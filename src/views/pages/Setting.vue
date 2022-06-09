@@ -19,10 +19,6 @@
         <br>
         <label><b>Nâng cao</b></label>
         <div style="height: 5px; background: none"></div>
-
-        <input type="checkbox" id="auto_update_from_chrome" v-model="autoUpdateFromChrome" disabled>
-        <label for="auto_update_from_chrome">&nbsp; Tự động cập nhật từ Chrome <a style="background: none; color: #0080FF;" href="#">Yêu cầu cài đặt Extension</a></label>
-        <br>
         <input type="checkbox" id="auto_backup" v-model="autoBackup">
         <label for="auto_backup">&nbsp; Tự động backup dữ liệu hằng ngày</label>
         <br><br>
@@ -44,7 +40,6 @@
                 },
                 saveLocation: '',
                 autoBackup: true,
-                autoUpdateFromChrome: false,
                 pin: ''
             }
         },
@@ -65,8 +60,7 @@
                 let objText = JSON.stringify({
                     saveLocation : this.saveLocation,
                     pin : this.pin,
-                    autoBackup: this.autoBackup,
-                    autoUpdateFromChrome : false
+                    autoBackup: this.autoBackup
                 });
 
                 let base64 = Buffer.from(objText, 'utf8').toString('base64');
@@ -86,7 +80,6 @@
                 this.pin = obj.pin;
                 this.saveLocation = obj.saveLocation;
                 this.autoBackup = obj.autoBackup;
-                this.autoUpdateFromChrome = obj.autoUpdateFromChrome;
             }
             
         }

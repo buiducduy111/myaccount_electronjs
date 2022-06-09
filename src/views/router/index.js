@@ -1,6 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import AccountPage from '../pages/Account.vue'
-import GroupPage from '../pages/Group.vue'
 import SettingPage from '../pages/Setting.vue'
 
 const routes = [
@@ -13,11 +12,6 @@ const routes = [
     path: '/account',
     name: 'account',
     component: AccountPage
-  },
-  {
-    path: '/group',
-    name: 'group',
-    component: GroupPage
   },
   {
     path: '/setting',

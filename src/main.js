@@ -3,11 +3,14 @@ import App from './views/App.vue'
 import router from './views/router'
 import store from './views/store'
 
+import 'jquery'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/css/all.min.css'
+
+import 'vue-select/dist/vue-select.css'
 
 import './views/assets/css/main.css'
 
